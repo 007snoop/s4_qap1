@@ -116,5 +116,5 @@
 > This is the GitHub actions running
 ![img.png](img.png)
 
-> This is the `testStringMethod()` running 
+> This is the `testStringMethod()` running
 ![img_1.png](img_1.png)
