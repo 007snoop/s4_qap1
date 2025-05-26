@@ -2,6 +2,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class BankAccountTest {
 
@@ -21,5 +22,20 @@ public class BankAccountTest {
     void testDeposit() {
         account.deposit(5.0);
         assertEquals(405, account.getBalance());
+    }
+
+    @Test
+    void testWithdraw() {
+        account.withdraw(200);
+        assertEquals(200, account.getBalance());
+    }
+
+    @Test
+    void testStringMethod() {
+        String result = account.toString();
+
+        assertTrue(result.contains(account.getAccountHolder()));
+        assertTrue(result.contains(String.valueOf(account.getBalance())));
+        System.out.println(account.toString());
     }
 }

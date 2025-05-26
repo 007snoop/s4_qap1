@@ -39,9 +39,9 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return "BankAccount{" +
+        return "BankAccount{\n" +
                 "accountHolder= '" + accountHolder + '\'' +
-                ", balance= $" + balance +
-                '}';
+                ", \nbalance= $" + balance +
+                "\n}";
     }
 }
